@@ -1,11 +1,57 @@
 use namastesql;
+
+
+-- the skills and techniques demonstrated in the provided SQL queries:
 /*
-download credit card transactions dataset from below link :
-https://www.kaggle.com/datasets/thedevastator/analyzing-credit-card-spending-habits-in-india
-import the dataset in sql server with table name : credit_card_transcations
-change the column names to lower case before importing data to sql server.Also replace space within column names with underscore.
-(alternatively you can use the dataset present in zip file)
-while importing make sure to change the data types of columns. by defualt it shows everything as varchar.
+1. Data Aggregation:
+		Skill: Using aggregate functions such as SUM, MAX, COUNT, and ROW_NUMBER to summarize and analyze data.
+
+
+2.Window Functions:
+		Skill: Utilizing window functions like ROW_NUMBER, LAG for advanced analytics within partitions of data.
+
+
+3. Common Table Expressions (CTEs):
+		Skill: Leveraging CTEs for creating temporary result sets, improving code readability, and simplifying complex queries.
+
+
+4. Subqueries:
+		Skill: Embedding subqueries within the main query to perform operations on intermediate result sets.
+
+
+5. Conditional Aggregation:
+		Skill: Applying conditional logic within aggregate functions to calculate specific metrics.
+
+
+6. Date Functions:
+		Skill: Using functions like YEAR, MONTH, DATEPART to extract and manipulate date-related information.
+
+
+7. Data Type Casting:
+		Skill: Converting data types using functions such as CAST to ensure appropriate calculations.
+
+
+8. Ranking Functions:
+		Skill: Using RANK() to rank rows based on specific criteria, enabling the selection of top or bottom results.
+
+
+9. HAVING Clause:
+		Skill: Filtering aggregated results using the HAVING clause to impose conditions on grouped data.
+
+
+10. Percentage Calculations:
+		Skill: Computing percentages and ratio-based metrics to analyze contribution and growth.
+
+
+11. Date Difference Calculation:
+		Skill: Using DATEDIFF to calculate the difference between two dates, measuring the duration.
+
+
+12. Sorting and Ordering:
+		Skill: Employing ORDER BY clause to sort the result set based on specified criteria.
+
+
+These queries showcase a combination of SQL skills, including data aggregation, window functions, subqueries, and conditional logic, to extract meaningful insights from the credit card transactions dataset.
 */
 
 select * from credit_card_transcations
